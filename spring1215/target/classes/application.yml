@@ -1,0 +1,19 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    password: 123456
+    username: root
+    url: jdbc:mysql://115.227.31.197:3306?xinmeng?
+
+
+logging:
+  file:
+    name: log/log.log
+
+mybatis:
+  mapper-locations: classpath:mybatis/*.xml
+  type-aliases-package: lu.spring1215.pojo
